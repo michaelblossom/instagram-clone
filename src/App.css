@@ -1,17 +1,8 @@
-*{
-  margin: 0 auto;
-}
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 
-*app{
-  background-color: #fafafa;
-  height: 100vh;
-}
-
-.app_headerImage{
-  background-color: white;
-  padding: 20px;
-  border-bottom: 1px solid lightgrey;
-  object-fit:contain;
-  width:150px;
-  
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
 }
