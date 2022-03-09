@@ -36,7 +36,8 @@ code {
   justify-content: space-between;
 }
 
-.profile-image {
+.profile-image,
+.status-img-container .profile {
   height: 50px;
   width: 50px;
   border-radius: 100%;
@@ -46,7 +47,8 @@ code {
   align-items: center;
 }
 
-.profile-image img {
+.profile-image img,
+.status-img-container img {
   width: 100%;
   margin: auto;
 }
@@ -58,4 +60,10 @@ code {
 
 .username {
   margin-left: 10px;
+}
+
+.photo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* width: 125px; */
 }
