@@ -1,7 +1,10 @@
 import React from "react";
 import { FaFacebook } from "react-icons/fa";
-
+import { Link, useNavigate } from "react-router-dom";
 const LoginPage = () => {
+  let navigate = useNavigate();
+  console.log(navigate);
+  console.log("hello");
   return (
     <>
       <section className="m-auto w-96 h-[450px] p-6 border mt-16 shadow">
@@ -23,9 +26,17 @@ const LoginPage = () => {
           />
         </div>
         <div>
-          <button className="bg-primary text-center px-2 py-2 mt-7 text-white w-full rounded">
-            Login
-          </button>
+          <Link>
+            <button
+              className="bg-primary text-center px-2 py-2 mt-7 text-white w-full rounded"
+              onClick={() => {
+                console.log("Button Clicked");
+                navigate("/status");
+              }}
+            >
+              Login
+            </button>
+          </Link>
         </div>
         <div className="grid grid-cols-7 items-center mt-4">
           <div className="col-span-3 h-[1px] w-32 bg-gray-300"></div>
